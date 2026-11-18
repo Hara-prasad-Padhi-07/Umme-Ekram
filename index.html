@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b5121b">
+  <title>Created By Your Babee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="cover-screen" id="coverScreen">
+      <div class="cover-hint">Imagine your smile on<br>your birthday ❤️</div>
+      <button class="cover-button" id="openBook" aria-label="Open birthday scrapbook">
+        <span class="cover-sticker sticker-one">✿</span>
+        <span class="cover-sticker sticker-two">♥</span>
+        <span class="cover-flower">🌸</span>
+        <span class="cover-title">a little book<br><em>of you</em></span>
+        <span class="cover-subtitle">A birthday keepsake · made with love</span>
+        <span class="cover-tape"></span>
+        <span class="cover-cta">CLICK TO OPEN ↗</span>
+      </button>
+      <div class="cover-caption">A LITTLE SURPRISE FOR YOU ❤️</div>
+    </section>
+
+    <section class="book-stage" id="bookStage" aria-label="Birthday scrapbook">
+      <div class="book-toolbar">
+        <span>✦ A MEMORY BOOK · EST. WITH LOVE</span>
+        <div class="toolbar-actions">
+          <label class="upload-label">＋ Add photos<input id="photoUpload" type="file" accept="image/*" multiple></label>
+          <button id="musicToggle" class="tool-button">♫ Music off</button>
+        </div>
+      </div>
+
+      <div class="book" id="book">
+        <div class="binder" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <article class="spread active" data-page="0">
+          <section class="paper left-page birthday-left">
+            <div class="paper-top">THE DAY THE WORLD GOT A LITTLE BRIGHTER</div>
+            <div class="age-number" id="ageNumber">20<span>th</span></div>
+            <h1 class="script-heading">Happy Birthday</h1>
+            <p class="recipient" id="recipientLeft">my favourite person</p>
+            <div class="tiny-rule">✦ ───────── ✦</div>
+            <p class="intro-copy" id="introCopy">Today is all about celebrating you, your beautiful heart, and every little thing that makes you wonderfully you.</p>
+            <div class="scribble">with love, always ♡</div>
+            <span class="page-number">01</span>
+            <span class="flower-deco left-flower">✿</span>
+          </section>
+          <section class="paper right-page">
+            <div class="photo-frame hero-photo">
+              <img data-photo="0" src="pics/pic1.jpg" alt="Birthday memory">
+              <span class="photo-caption">one of my favourite moments</span>
+            </div>
+            <div class="sticker star-sticker">✦</div>
+            <div class="hand-note">you make<br>life lovely</div>
+            <div class="tape photo-tape"></div>
+            <span class="page-number">02</span>
+          </section>
+        </article>
+
+        <article class="spread" data-page="1">
+          <section class="paper left-page memory-page">
+            <div class="paper-top">A FEW THINGS I NEVER WANT TO FORGET</div>
+            <h2 class="script-heading">Little moments,<br>big memories.</h2>
+            <div class="photo-frame tilted photo-small">
+              <img data-photo="1" src="pics/pic2.jpg" alt="A happy memory">
+              <span class="photo-caption">the days that felt like sunshine</span>
+            </div>
+            <span class="sticker flower-sticker">🌼</span>
+            <span class="page-number">03</span>
+          </section>
+          <section class="paper right-page memory-right">
+            <div class="photo-frame tilted-reverse photo-medium">
+              <img data-photo="2" src="pics/pic3.jpg" alt="A celebration">
+              <span class="photo-caption">laughing a little too loudly</span>
+            </div>
+            <p class="memory-words">Some memories are tiny. Some are loud. All of them are precious because they have you in them.</p>
+            <div class="mini-polaroid"><img data-photo="3" src="pics/pic4.jpg" alt="A special moment"><span>keep this one ♡</span></div>
+            <span class="page-number">04</span>
+          </section>
+        </article>
+
+        <article class="spread red-spread" data-page="2">
+          <section class="red-memory">
+            <div class="section-kicker">A collection of moments</div>
+            <h2 class="script-heading">Our little gallery</h2>
+            <p class="red-intro">A few snapshots, a thousand feelings.</p>
+            <div class="gallery-grid">
+              <figure class="gallery-photo"><img data-photo="4" src="pics/pic5.jpg" alt="Memory"><figcaption>the happy place</figcaption></figure>
+              <figure class="gallery-photo"><img data-photo="5" src="pics/pic6.jpg" alt="Memory"><figcaption>sweet little things</figcaption></figure>
+              <figure class="gallery-photo"><img data-photo="6" src="pics/pic7.jpg" alt="Memory"><figcaption>one for the album</figcaption></figure>
+            </div>
+            <div class="film-strip">
+              <div class="film-holes"></div>
+              <div class="film-track">
+                <img data-photo="7" src="pics/pic8.jpg", alt="Film memory">
+                <img data-photo="8" src="pics/pic9.jpg" alt="Film memory">
+                <img data-photo="9" src="pics/pic10.jpg" alt="Film memory">
+                <img data-photo="10" src="pics/pic11.jpg" alt="Film memory">
+                <img data-photo="7" src="pics/pic8.jpg" alt="Film memory">
+              </div>
+              <div class="film-holes"></div>
+            </div>
+            <span class="page-number light-number">05</span>
+          </section>
+        </article>
+
+        <article class="spread" data-page="3">
+          <section class="paper left-page letter-page">
+            <div class="paper-top">A LETTER, JUST FOR YOU</div>
+            <h2 class="script-heading">To my dearest...</h2>
+            <p class="letter-text" id="letterText">I hope you never forget how special you are. You make ordinary days feel brighter, and your smile has a way of making everything a little better. I wish you a year filled with gentle surprises, brave dreams, belly laughs and the kind of happiness that stays.</p>
+            <p class="letter-text">May you always feel loved, celebrated and appreciated — today and every day after.</p>
+            <div class="signature">Always cheering for you,<br><span>Someone who loves you ♡</span></div>
+            <span class="page-number">06</span>
+          </section>
+          <section class="paper right-page letter-photo-page">
+            <div class="postage-stamp">WITH<br>LOVE<br>♥</div>
+            <div class="photo-frame letter-photo">
+              <img data-photo="11" src="pics/pic3.jpg" alt="Birthday celebration">
+              <span class="photo-caption">a moment worth keeping</span>
+            </div>
+            <div class="hand-note note-bottom">forever a reason<br>to celebrate ✿</div>
+            <span class="page-number">07</span>
+          </section>
+        </article>
+
+        <article class="spread final-spread" data-page="4">
+          <section class="final-card">
+            <div class="final-top">AND ONE LAST THING...</div>
+            <div class="final-flower">🌹</div>
+            <h2 class="script-heading">Happy Birthday</h2>
+            <h3 id="recipientFinal">Beautiful soul</h3>
+            <p id="finalWish">May this new chapter be your most beautiful one yet. Keep shining, keep dreaming, and never stop being you.</p>
+            <div class="final-photo"><img data-photo="12" src="pics/pic1.jpg" alt="Birthday celebration"></div>
+            <button id="wishButton" class="wish-button">Send you a little love ♥</button>
+            <div class="final-signoff">Made with love, just for you.</div>
+          </section>
+        </article>
+      </div>
+
+      <nav class="page-navigation">
+        <button id="prevPage" class="nav-button">← Previous</button>
+        <div class="page-dots" id="pageDots" aria-label="Choose scrapbook page"></div>
+        <span class="page-counter" id="pageCounter">01 / 05</span>
+        <button id="nextPage" class="nav-button">Next page →</button>
+      </nav>
+      <p class="mobile-tip">Swipe or use the arrows to turn the pages ✦</p>
+    </section>
+  </main>
+  <div id="lightbox" class="lightbox"><button id="closeLightbox">×</button><img id="lightboxImage" alt="Expanded memory"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
